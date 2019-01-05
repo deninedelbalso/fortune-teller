@@ -34,12 +34,10 @@ public class FortuneTeller {
 		System.out.println("Please enter how many siblings you have:");
 		int siblings = input.nextInt();
 
-		// Value of conditions
-
 		String firstNameCap = firstName.substring(0, 1).toUpperCase() + firstName.substring(1);
 		String lastNameCap = lastName.substring(0, 1).toUpperCase() + lastName.substring(1);
 
-		int retireYears = 0;
+		int retirementYears = 0;
 		if ((age % 2) == 0) {
 			retireYears = 25;
 		} else {
