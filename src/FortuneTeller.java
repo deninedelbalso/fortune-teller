@@ -23,16 +23,15 @@ public class FortuneTeller {
 		int birthdayMonth = input.nextInt();
 
 		System.out.println("What is your favorite ROYGBIV color?");
-		System.out.println("   (Hint: type \"help\" if you do not remember what ROYGBIV stands for.");
-		String favColor = input.next();
+		System.out.println("Enter HELP if you need the ROYGBIV colors.");
+		String favoriteColor = input.next();
 
-		if (favColor.equalsIgnoreCase("help")) {
-			System.out.println(
-					" R = Red\n O = Orange\n Y = Yellow\n G = Green\n B = Blue\n I = Indigo\n V = Violet\nWhich one is your favorite?");
-			favColor = input.next();
+		if (favoriteColor.equalsIgnoreCase("help")) {
+			System.out.println("R = Red, O = Orange, Y = Yellow, G = Green, B = Blue, I = Indigo, V = Violet");
+			favoriteColor = input.next();
 		}
 
-		System.out.println("Tell me how many siblings you have.");
+		System.out.println("Please enter how many siblings you have:");
 		int siblings = input.nextInt();
 
 		// Value of conditions
