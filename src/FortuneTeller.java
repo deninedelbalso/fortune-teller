@@ -25,9 +25,9 @@ public class FortuneTeller {
 		if (favColor.equalsIgnoreCase("help")) {
 			System.out.println("ROYGBIV = RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET");
 			favColor = input.nextLine();
-
 		}
-		System.out.println("Awesome! How many siblings do you have?");
+		
+		System.out.println("How many siblings do you have?");
 		int siblings = input.nextInt();
 
 		String retirementAge = "0";
