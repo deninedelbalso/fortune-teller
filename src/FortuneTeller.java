@@ -8,10 +8,10 @@ public class FortuneTeller {
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Hello, what is your first name?");
-		String firstName = input.next();
+		String firstName = input.nextLine();
 
 		System.out.println("What is your last name?");
-		String lastName = input.next();
+		String lastName = input.nextLine();
 
 		System.out.println("How old are you?");
 		int age = input.nextInt();
@@ -19,10 +19,7 @@ public class FortuneTeller {
 		System.out.println("What month were you born (number of month)?");
 		int birthMonth = input.nextInt();
 
-		input.nextLine();
-
-		System.out.println("What is your favorite ROYGBIV color? (If you do not know what ROYGBIV means, type HELP.)");
-
+		System.out.println("What is your favorite ROYGBIV color (type HELP if you don't know what ROYGBIV stands for)?");
 		String favColor = input.nextLine();
 
 		if (favColor.equalsIgnoreCase("help")) {
