@@ -60,19 +60,14 @@ public class FortuneTeller {
 
 		} else if (favColor.equalsIgnoreCase("orange")) {
 			transportation = "School Bus";
-
 		} else if (favColor.equalsIgnoreCase("yellow")) {
 			transportation = "RV";
-
 		} else if (favColor.equalsIgnoreCase("green")) {
 			transportation = "Harley";
-
 		} else if (favColor.equalsIgnoreCase("blue")) {
 			transportation = "BMW";
-
 		} else if (favColor.equalsIgnoreCase("indigo")) {
 			transportation = "Mini Cooper";
-
 		} else {
 			transportation = "tall cat";
 		}
