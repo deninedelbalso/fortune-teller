@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-
+NumberFormat currency = NumberFormat.getCurrencyInstance(Locale.US);
 public class FortuneTeller {
 
 	public static void main(String[] args) {
@@ -72,17 +72,17 @@ public class FortuneTeller {
 		}
 
 		String balance;
-		if (birthMonth >= 1 && birthMonth <= 4) {
+		if (birthMonth <= 4) {
 			balance = "$100,000";
-		} else if (birthMonth >= 5 && birthMonth <= 8) {
+		} else if (birthMonth >= 5) {
 			balance = "$5,500,000";
-		} else if (birthMonth >= 9 && birthMonth <= 12) {
+		} else if (birthMonth <= 12) {
 			balance = "$1,000,000";
 		} else {
 			balance = "$0.00";
 		}
 
-		System.out.println(firstName + " " + lastName + "'s" + " fortune predicts...you will retire in " + retirementAge + " with " + balance
+		System.out.println(firstName + " " + lastName + "'s" + " fortune predicts...you will retire in " + retirementAge + " with " + currency.format(balance)
 				+ " in the bank, a vacation home in " + vacationHome + ", and travel by " + transportation + "!");
 	}
 }
