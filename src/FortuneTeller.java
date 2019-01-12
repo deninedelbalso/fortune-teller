@@ -1,6 +1,4 @@
 
-import java.text.NumberFormat;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class FortuneTeller {
@@ -8,94 +6,104 @@ public class FortuneTeller {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
-		System.out.println("Answer my questions and your fortune awaits.....");
 
-		System.out.println("Please enter your first name:");
+		System.out.println("Hello, what is your first name?");
 		String firstName = input.next();
 
-		System.out.println("Please enter your last name:");
+		System.out.println("Thank you! What is your last name?");
 		String lastName = input.next();
 
-		System.out.println("How old are you?");
+		System.out.println("Great! How old are you?");
 		int age = input.nextInt();
 
-		System.out.println("Please enter your birthday month as a number");
-		int birthdayMonth = input.nextInt();
+		System.out.println("Doing great! What month were you born (please give the numerical answer)?");
+		int birthMonth = input.nextInt();
 
-		System.out.println("What is your favorite ROYGBIV color?");
-		System.out.println("Enter HELP if you need the ROYGBIV colors.");
-		String favoriteColor = input.next();
+		input.nextLine();
 
-		if (favoriteColor.equalsIgnoreCase("help")) {
-			System.out.println("R = Red, O = Orange, Y = Yellow, G = Green, B = Blue, I = Indigo, V = Violet");
-			favoriteColor = input.next();
+		System.out.println("What is your favorite ROYGBIV color? (If you do not know what ROYGBIV means, type HELP.)");
+
+		String favColor = input.nextLine();
+
+		if (favColor.equalsIgnoreCase("help")) {
+			System.out.println("You can pick from the colors: RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET");
+			favColor = input.nextLine();
+
 		}
-
-		System.out.println("Please enter how many siblings you have:");
+		System.out.println("Awesome! How many siblings do you have?");
 		int siblings = input.nextInt();
 
-		String firstNameCap = firstName.substring(0, 1).toUpperCase() + firstName.substring(1);
-		String lastNameCap = lastName.substring(0, 1).toUpperCase() + lastName.substring(1);
+		String retirementAge = "0";
 
-		int retirementYears = 0;
-		if ((age % 2) == 0) {
-			retireYears = 25;
+		if (age % 2 == 0) {
+			retirementAge = "20 years";
+
 		} else {
-			retireYears = 2;
+			retirementAge = "5 years";
 		}
 
-		String vacaHome = "determineHome";
-		while (siblings < 0) {
-			System.out.println("Oops. The number of siblings must be a positive number. Try again.");
-			siblings = input.nextInt();
-		}
+		String vacationHome;
+
 		if (siblings == 0) {
-			vacaHome = "Akron, Ohio";
+			vacationHome = "Naples, Florida";
+
 		} else if (siblings == 1) {
-			vacaHome = "Kelly's Island";
+			vacationHome = "Cancun, Mexico";
+
 		} else if (siblings == 2) {
-			vacaHome = "Outer Banks";
+			vacationHome = "Pierre, South Dakota";
+
 		} else if (siblings == 3) {
-			vacaHome = "Key West";
+			vacationHome = "Paris, France";
+
+		} else if (siblings > 3) {
+			vacationHome = "Miami, Florida";
+
 		} else {
-			vacaHome = "Hawaii";
+			vacationHome = "hmmm...check how many siblings you have again!";
 		}
 
-		String trans = "determineTrans";
+		String transportation;
 
 		if (favColor.equalsIgnoreCase("red")) {
-			trans = "horse & buggy";
+			transportation = "Tesla";
+
 		} else if (favColor.equalsIgnoreCase("orange")) {
-			trans = "space ship";
+			transportation = "walking";
+
 		} else if (favColor.equalsIgnoreCase("yellow")) {
-			trans = "canoe";
+			transportation = "mini-van";
+
 		} else if (favColor.equalsIgnoreCase("green")) {
-			trans = "submarine";
+			transportation = "bicycle";
+
 		} else if (favColor.equalsIgnoreCase("blue")) {
-			trans = "sled dog";
+			transportation = "motorcycle";
+
 		} else if (favColor.equalsIgnoreCase("indigo")) {
-			trans = "dolphin";
-		} else if (favColor.equalsIgnoreCase("violet")) {
-			trans = "Mercedes";
+			transportation = "public bus";
+
 		} else {
-			trans = "walking all the way";
+			transportation = "horse";
 		}
 
-		NumberFormat currency = NumberFormat.getCurrencyInstance(Locale.US);
-		double bankBal = 0.00;
-		if (birthMonth <= 4) {
-			bankBal = 10000.00;
-		} else if (birthMonth <= 8) {
-			bankBal = 99.99;
-		} else if (birthMonth <= 12) {
-			bankBal = 1000000.00;
+		String balance;
+
+		if (birthMonth >= 1 && birthMonth <= 4) {
+			balance = "$300,000";
+
+		} else if (birthMonth >= 5 && birthMonth <= 8) {
+			balance = "$2,500,000";
+
+		} else if (birthMonth >= 9 && birthMonth <= 12) {
+			balance = "$42.00";
+
 		} else {
-			bankBal = 0.00;
+			balance = "$0.00";
+
 		}
 
-		System.out.println("Here is your fortune:");
-		System.out.println(firstNameCap + " " + lastNameCap + " will retire in " + retireYears + " years, with " + currency.format(bankBal) + " in the bank, a vacation home in " + vacaHome
-				+ " and travel by " + trans + "!");
-		input.close();
+		System.out.println(firstName + " " + lastName + "," + " your fortune tells me..." + "you will retire in " + retirementAge + " with " + balance
+				+ " in the bank, a vacation home in " + vacationHome + ", and travel by " + transportation + "!");
 	}
-
+}
