@@ -48,14 +48,13 @@ public class FortuneTeller {
 			vacationHome = "Greece";
 		} else if (siblings == 3) {
 			vacationHome = "Arizona";
-		} else if (siblings > 3) {
+		} else if (siblings == 4) {
 			vacationHome = "Brazil";
 		} else {
 			vacationHome = "Cleveland, Ohio!";
 		}
 
 		String transportation;
-
 		if (favColor.equalsIgnoreCase("red")) {
 			transportation = "Jeep";
 
