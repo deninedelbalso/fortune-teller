@@ -23,7 +23,7 @@ public class FortuneTeller {
 		String favColor = input.nextLine();
 
 		if (favColor.equalsIgnoreCase("help")) {
-			System.out.println("You can pick from the colors: RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET");
+			System.out.println("ROYGBIV = RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET");
 			favColor = input.nextLine();
 
 		}
