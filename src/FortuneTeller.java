@@ -73,11 +73,11 @@ public class FortuneTeller {
 
 		String balance;
 		if (birthMonth >= 1 && birthMonth <= 4) {
-			balance = "$300,000";
+			balance = "$100,000";
 		} else if (birthMonth >= 5 && birthMonth <= 8) {
-			balance = "$2,500,000";
+			balance = "$5,500,000";
 		} else if (birthMonth >= 9 && birthMonth <= 12) {
-			balance = "$42.00";
+			balance = "$1,000,000";
 		} else {
 			balance = "$0.00";
 		}
