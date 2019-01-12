@@ -10,13 +10,13 @@ public class FortuneTeller {
 		System.out.println("Hello, what is your first name?");
 		String firstName = input.next();
 
-		System.out.println("Thank you! What is your last name?");
+		System.out.println("What is your last name?");
 		String lastName = input.next();
 
-		System.out.println("Great! How old are you?");
+		System.out.println("How old are you?");
 		int age = input.nextInt();
 
-		System.out.println("Doing great! What month were you born (please give the numerical answer)?");
+		System.out.println("What month were you born (number of month)?");
 		int birthMonth = input.nextInt();
 
 		input.nextLine();
