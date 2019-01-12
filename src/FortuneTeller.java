@@ -41,17 +41,17 @@ public class FortuneTeller {
 
 		String vacationHome;
 		if (siblings == 0) {
-			vacationHome = "Naples, Florida";
-		} else if (siblings == 1) {
-			vacationHome = "Cancun, Mexico";
-		} else if (siblings == 2) {
-			vacationHome = "Pierre, South Dakota";
-		} else if (siblings == 3) {
-			vacationHome = "Paris, France";
-		} else if (siblings > 3) {
 			vacationHome = "Miami, Florida";
+		} else if (siblings == 1) {
+			vacationHome = "Djibouti";
+		} else if (siblings == 2) {
+			vacationHome = "Greece";
+		} else if (siblings == 3) {
+			vacationHome = "Arizona";
+		} else if (siblings > 3) {
+			vacationHome = "Brazil";
 		} else {
-			vacationHome = "hmmm...check how many siblings you have again!";
+			vacationHome = "Cleveland, Ohio!";
 		}
 
 		String transportation;
