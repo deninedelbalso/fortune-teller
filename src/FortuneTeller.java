@@ -30,32 +30,26 @@ public class FortuneTeller {
 		System.out.println("How many siblings do you have?");
 		int siblings = input.nextInt();
 
+		
+		
 		String retirementAge = "0";
-
 		if (age % 2 == 0) {
 			retirementAge = "20 years";
-
 		} else {
 			retirementAge = "5 years";
 		}
 
 		String vacationHome;
-
 		if (siblings == 0) {
 			vacationHome = "Naples, Florida";
-
 		} else if (siblings == 1) {
 			vacationHome = "Cancun, Mexico";
-
 		} else if (siblings == 2) {
 			vacationHome = "Pierre, South Dakota";
-
 		} else if (siblings == 3) {
 			vacationHome = "Paris, France";
-
 		} else if (siblings > 3) {
 			vacationHome = "Miami, Florida";
-
 		} else {
 			vacationHome = "hmmm...check how many siblings you have again!";
 		}
