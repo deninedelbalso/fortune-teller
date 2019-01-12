@@ -63,25 +63,25 @@ public class FortuneTeller {
 		String transportation;
 
 		if (favColor.equalsIgnoreCase("red")) {
-			transportation = "Tesla";
+			transportation = "Jeep";
 
 		} else if (favColor.equalsIgnoreCase("orange")) {
-			transportation = "walking";
+			transportation = "School Bus";
 
 		} else if (favColor.equalsIgnoreCase("yellow")) {
-			transportation = "mini-van";
+			transportation = "RV";
 
 		} else if (favColor.equalsIgnoreCase("green")) {
-			transportation = "bicycle";
+			transportation = "Harley";
 
 		} else if (favColor.equalsIgnoreCase("blue")) {
-			transportation = "motorcycle";
+			transportation = "BMW";
 
 		} else if (favColor.equalsIgnoreCase("indigo")) {
-			transportation = "public bus";
+			transportation = "Mini Cooper";
 
 		} else {
-			transportation = "horse";
+			transportation = "tall cat";
 		}
 
 		String balance;
