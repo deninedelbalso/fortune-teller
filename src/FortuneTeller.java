@@ -82,7 +82,7 @@ public class FortuneTeller {
 			balance = "$0.00";
 		}
 
-		System.out.println(firstName + " " + lastName + "," + " your fortune tells me..." + "you will retire in " + retirementAge + " with " + balance
+		System.out.println(firstName + " " + lastName + "'s" + " fortune predicts...you will retire in " + retirementAge + " with " + balance
 				+ " in the bank, a vacation home in " + vacationHome + ", and travel by " + transportation + "!");
 	}
 }
