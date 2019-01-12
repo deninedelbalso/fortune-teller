@@ -57,7 +57,6 @@ public class FortuneTeller {
 		String transportation;
 		if (favColor.equalsIgnoreCase("red")) {
 			transportation = "Jeep";
-
 		} else if (favColor.equalsIgnoreCase("orange")) {
 			transportation = "School Bus";
 		} else if (favColor.equalsIgnoreCase("yellow")) {
@@ -73,19 +72,14 @@ public class FortuneTeller {
 		}
 
 		String balance;
-
 		if (birthMonth >= 1 && birthMonth <= 4) {
 			balance = "$300,000";
-
 		} else if (birthMonth >= 5 && birthMonth <= 8) {
 			balance = "$2,500,000";
-
 		} else if (birthMonth >= 9 && birthMonth <= 12) {
 			balance = "$42.00";
-
 		} else {
 			balance = "$0.00";
-
 		}
 
 		System.out.println(firstName + " " + lastName + "," + " your fortune tells me..." + "you will retire in " + retirementAge + " with " + balance
